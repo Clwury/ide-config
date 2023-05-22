@@ -1,0 +1,61 @@
+{
+    "eslint.format.enable": true,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New', monospace, '微软雅黑'",
+    "editor.fontSize": 18,
+    "editor.fontVariations": false,
+    "editor.lineHeight": 30,
+    "editor.fontWeight": "normal",
+    "editor.unicodeHighlight.allowedLocales": {
+      "zh-hant": true
+    },
+    "workbench.tree.indent": 16,
+    "workbench.tree.renderIndentGuides": "always",
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.tabSize": 2,
+    "workbench.colorTheme": "Hard Hacker Darker",
+    // vim
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.hlsearch": true,
+    "vim.leader": "<space>",
+    "vim.normalModeKeyBindingsNonRecursive": [
+      {
+        "before": ["H"],
+        "after": ["^"]
+      },
+      {
+        "before": ["L"],
+        "after": ["$"]
+      }
+    ],
+    "vim.normalModeKeyBindings": [
+      {
+        "before": ["<C-h>"],
+        "commands": [
+          "workbench.action.previousEditor"
+        ]
+      },
+      {
+        "before": ["<C-l>"],
+        "commands": [
+          "workbench.action.nextEditor"
+        ]
+      },
+      {
+        "before": ["<leader>", "q"],
+        "commands": [
+          "workbench.action.closeActiveEditor"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindings": [
+      {
+        "before": ["j", "j"],
+        "after": ["<Esc>"]
+      }
+    ],
+
+    "editor.lineNumbers": "relative",
+    "editor.renderWhitespace": "boundary"
+}
