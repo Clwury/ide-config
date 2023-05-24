@@ -15,6 +15,7 @@
     "editor.tabSize": 2,
     "workbench.colorTheme": "Hard Hacker Darker",
     // vim
+    "vim.easymotion": true,
     "vim.incsearch": true,
     "vim.useSystemClipboard": true,
     "vim.hlsearch": true,
@@ -27,6 +28,11 @@
       {
         "before": ["L"],
         "after": ["$"]
+      },
+      {
+        "before": ["K"],
+        "commands": ["lineBreakInsert"],
+        "silent": true
       }
     ],
     "vim.normalModeKeyBindings": [
