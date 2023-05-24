@@ -6,6 +6,8 @@
 """ Map leader to space ---------------------
 let mapleader=" "
 
+""" Plugins  --------------------------------
+
 """ Common settings -------------------------
 set showmode
 set clipboard+=unnamed
@@ -21,9 +23,6 @@ set relativenumber
 " text scroll if you mouse-click near the start or end of the window.
 set scrolloff=5
 
-" Do incremental searching.
-set incsearch
-
 " Don't use Ex mode, use Q for formatting.
 map Q gq
 
@@ -33,7 +32,7 @@ map Q gq
 Plug 'machakann/vim-highlightedyank'
 " Commentary plugin
 Plug 'tpope/vim-commentary'
-
+Plug 'easymotion/vim-easymotion'
 
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
 "" Map \r to the Reformat Code action
@@ -44,6 +43,7 @@ Plug 'tpope/vim-commentary'
 
 "" Map \b to toggle the breakpoint on the current line
 "map \b <Action>(ToggleLineBreakpoint)
+map gh <Action>(QuickJavaDoc)
 
 " Quit insert mode
 inoremap jj <Esc>
@@ -59,3 +59,5 @@ nnoremap Y y$
 
 nnoremap <C-h> gT
 nnoremap <C-l> gt
+nnoremap <C-n> :noh<CR>
+nnoremap <leader>q :action CloseContent<CR>
