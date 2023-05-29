@@ -11,9 +11,11 @@
     },
     "workbench.tree.indent": 16,
     "workbench.tree.renderIndentGuides": "always",
+    "workbench.colorTheme": "Hard Hacker Darker",
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.tabSize": 2,
-    "workbench.colorTheme": "Hard Hacker Darker",
+    "editor.lineNumbers": "relative",
+    "editor.renderWhitespace": "boundary",
     // vim
     "vim.easymotion": true,
     "vim.incsearch": true,
@@ -30,9 +32,17 @@
         "after": ["$"]
       },
       {
+        "before": ["Y"],
+        "after": ["y", "$"]
+      },
+      {
         "before": ["K"],
         "commands": ["lineBreakInsert"],
         "silent": true
+      },
+      {
+        "before": ["<C-n>"],
+        "commands": [":noh"]
       }
     ],
     "vim.normalModeKeyBindings": [
@@ -61,7 +71,4 @@
         "after": ["<Esc>"]
       }
     ],
-
-    "editor.lineNumbers": "relative",
-    "editor.renderWhitespace": "boundary"
 }
