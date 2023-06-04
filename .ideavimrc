@@ -6,8 +6,6 @@
 """ Map leader to space ---------------------
 let mapleader=" "
 
-""" Plugins  --------------------------------
-
 """ Common settings -------------------------
 set showmode
 set clipboard+=unnamed
