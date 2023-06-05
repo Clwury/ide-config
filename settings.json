@@ -21,6 +21,7 @@
     "vim.incsearch": true,
     "vim.useSystemClipboard": true,
     "vim.hlsearch": true,
+    "vim.highlightedyank.enable": true,
     "vim.leader": "<space>",
     "vim.normalModeKeyBindingsNonRecursive": [
       {
