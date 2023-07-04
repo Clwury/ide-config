@@ -15,6 +15,8 @@ set ignorecase
 set smartcase
 set number
 set relativenumber
+set ideajoin
+set sneak
 
 "" -- Suggested options --
 " Show a few lines of context around the cursor. Note that this makes the
@@ -33,6 +35,10 @@ Plug 'tpope/vim-commentary'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-surround'
 Plug 'michaeljsmith/vim-indent-object'
+Plug 'preservim/nerdtree'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'vim-scripts/ReplaceWithRegister'
+Plug 'tommcdo/vim-exchange'
 
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
 "" Map \r to the Reformat Code action
