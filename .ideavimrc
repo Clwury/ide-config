@@ -17,6 +17,7 @@ set number
 set relativenumber
 set ideajoin
 set sneak
+set ideamarks
 
 "" -- Suggested options --
 " Show a few lines of context around the cursor. Note that this makes the
@@ -67,3 +68,4 @@ nnoremap <C-h> gT
 nnoremap <C-l> gt
 nnoremap <C-n> :noh<CR>
 nnoremap <leader>q :action CloseContent<CR>
+nnoremap <leader>t :NERDTree<CR>
