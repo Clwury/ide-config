@@ -1,2 +1,2 @@
-# ide-vimrc
-IDE vim config
+# ide-config
+IDE config

@@ -1,21 +1,21 @@
 {
-    "eslint.format.enable": true,
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-    "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New', monospace, '微软雅黑'",
-    "editor.fontSize": 18,
-    "editor.fontVariations": false,
-    "editor.lineHeight": 30,
-    "editor.fontWeight": "normal",
-    "editor.unicodeHighlight.allowedLocales": {
-      "zh-hant": true
-    },
-    "workbench.tree.indent": 16,
-    "workbench.tree.renderIndentGuides": "always",
-    "workbench.colorTheme": "Hard Hacker Darker",
-    "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "editor.tabSize": 2,
-    "editor.lineNumbers": "relative",
-    "editor.renderWhitespace": "boundary",
+  "eslint.format.enable": true,
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.fontFamily": "JetBrains Mono, monospace, Consolas, 'Courier New', '微软雅黑'",
+  "editor.fontSize": 18,
+  "editor.fontVariations": false,
+  "editor.lineHeight": 30,
+  "editor.fontWeight": "normal",
+  "editor.unicodeHighlight.allowedLocales": {
+    "zh-hant": true
+  },
+  "workbench.tree.indent": 16,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.tabSize": 2,
+  "editor.lineNumbers": "relative",
+  "editor.renderWhitespace": "boundary",
     // vim
     "vim.easymotion": true,
     "vim.incsearch": true,
@@ -64,6 +64,10 @@
         "commands": [
           "workbench.action.closeActiveEditor"
         ]
+      },
+      {
+        "before": ["<leader>", "s"],
+        "after": ["leader", "leader", "2", "s"]
       }
     ],
     "vim.insertModeKeyBindings": [
