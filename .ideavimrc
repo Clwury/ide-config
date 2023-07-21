@@ -68,4 +68,5 @@ nnoremap <C-h> gT
 nnoremap <C-l> gt
 nnoremap <C-n> :noh<CR>
 nnoremap <leader>q :action CloseContent<CR>
-nnoremap <leader>t :NERDTree<CR>
+nnoremap <leader>e :NERDTreeToggle<CR>
+nnoremap <leader>o :NERDTreeFocus<CR>
