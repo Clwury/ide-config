@@ -70,3 +70,6 @@ nnoremap <C-n> :noh<CR>
 nnoremap <leader>q :action CloseContent<CR>
 nnoremap <leader>e :NERDTreeToggle<CR>
 nnoremap <leader>o :NERDTreeFocus<CR>
+
+vnoremap H ^
+vnoremap L $
