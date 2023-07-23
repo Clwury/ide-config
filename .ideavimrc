@@ -16,6 +16,7 @@ set smartcase
 set number
 set relativenumber
 set ideajoin
+" Install IdeaVim-sneak plugin
 set sneak
 set ideamarks
 
@@ -33,13 +34,17 @@ map Q gq
 Plug 'machakann/vim-highlightedyank'
 " Commentary plugin
 Plug 'tpope/vim-commentary'
+" Install IdeaVim-EasyMotion and AceJump plugins
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-surround'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'preservim/nerdtree'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'vim-scripts/ReplaceWithRegister'
+Plug 'vim-scripts/argtextobj.vim'
 Plug 'tommcdo/vim-exchange'
+
+let g:argtextobj_pairs="[:],(:),<:>"
 
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
 "" Map \r to the Reformat Code action
