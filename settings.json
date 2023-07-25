@@ -1,21 +1,29 @@
 {
-  "eslint.format.enable": true,
-  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-  "editor.fontFamily": "JetBrains Mono, monospace, Consolas, 'Courier New', '微软雅黑'",
-  "editor.fontSize": 18,
-  "editor.fontVariations": false,
-  "editor.lineHeight": 30,
-  "editor.fontWeight": "normal",
-  "editor.unicodeHighlight.allowedLocales": {
-    "zh-hant": true
-  },
-  "workbench.tree.indent": 16,
-  "workbench.tree.renderIndentGuides": "always",
-  "workbench.colorTheme": "One Dark Pro Darker",
-  "editor.suggest.snippetsPreventQuickSuggestions": false,
-  "editor.tabSize": 2,
-  "editor.lineNumbers": "relative",
-  "editor.renderWhitespace": "boundary",
+    "eslint.format.enable": true,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.fontFamily": "JetBrains Mono, monospace, Consolas, 'Courier New', '微软雅黑'",
+    "editor.fontSize": 18,
+    "editor.fontVariations": false,
+    "editor.lineHeight": 30,
+    "editor.fontWeight": "normal",
+    "editor.unicodeHighlight.allowedLocales": {
+      "zh-hant": true
+    },
+    "[jsonc]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "workbench.tree.indent": 16,
+    "workbench.tree.renderIndentGuides": "always",
+    "workbench.colorTheme": "One Dark Pro",
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.tabSize": 2,
+    "editor.lineNumbers": "relative",
+    "editor.renderWhitespace": "boundary",
+    // "http.proxyAuthorization": null,
+    // "http.proxyStrictSSL": true,
+    // "workbench.settings.editor": "json",
+    // "workbench.settings.useSplitJSON": true,
+    "volar.inlayHints.eventArgumentInInlineHandlers": false,
     // vim
     "vim.easymotion": true,
     "vim.incsearch": true,
@@ -23,6 +31,7 @@
     "vim.hlsearch": true,
     "vim.highlightedyank.enable": true,
     "vim.leader": "<space>",
+    "vim.foldfix": true,
     "vim.normalModeKeyBindingsNonRecursive": [
       {
         "before": ["H"],
@@ -46,6 +55,16 @@
         "commands": [":noh"]
       }
     ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+      {
+        "before": ["H"],
+        "after": ["^"]
+      },
+      {
+        "before": ["L"],
+        "after": ["$"]
+      }
+    ],
     "vim.normalModeKeyBindings": [
       {
         "before": ["<C-h>"],
@@ -63,6 +82,18 @@
         "before": ["<leader>", "q"],
         "commands": [
           "workbench.action.closeActiveEditor"
+        ]
+      },
+      {
+        "before": ["<leader>", "e"],
+        "commands": [
+          "workbench.action.toggleSidebarVisibility"
+        ]
+      },
+      {
+        "before": ["<leader>", "o"],
+        "commands": [
+          "workbench.files.action.focusFilesExplorer"
         ]
       },
       {
