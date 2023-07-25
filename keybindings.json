@@ -1,0 +1,23 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "escape",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "explorerViewletFocus && vim.active && vim.mode === 'Normal'"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "list.collapse",
+    "when": "listFocus && !inputFoucs"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "list.expand",
+    "when": "listFocus && !inputFoucs"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "list.focusParent",
+    "when": "listFocus && !inputFoucs"
+  }
+]
