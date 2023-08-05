@@ -14,7 +14,7 @@
     },
     "workbench.tree.indent": 16,
     "workbench.tree.renderIndentGuides": "always",
-    "workbench.colorTheme": "One Dark Pro",
+    "workbench.colorTheme": "Default Light Modern",
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.tabSize": 2,
     "editor.lineNumbers": "relative",
@@ -53,6 +53,12 @@
       {
         "before": ["<C-n>"],
         "commands": [":noh"]
+      },
+      {
+        "before": ["<C-[>"],
+        "commands": [
+          "editor.emmet.action.matchTag"
+        ]
       }
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
