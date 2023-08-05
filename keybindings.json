@@ -3,7 +3,7 @@
   {
     "key": "escape",
     "command": "workbench.action.focusActiveEditorGroup",
-    "when": "explorerViewletFocus && vim.active && vim.mode === 'Normal'"
+    "when": "filesExplorerFocus && vim.active && vim.mode === 'Normal'"
   },
   {
     "key": "ctrl+h",
@@ -16,8 +16,28 @@
     "when": "listFocus && !inputFoucs"
   },
   {
+    "key": "ctrl+j",
+    "command": "list.focusDown",
+    "when": "listFocus && !inputFoucs"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "list.focusUp",
+    "when": "listFocus && !inputFoucs"
+  },
+  {
     "key": "ctrl+p",
     "command": "list.focusParent",
     "when": "listFocus && !inputFoucs"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    "key": "enter",
+    "command": "-renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus"
   }
 ]
