@@ -14,7 +14,7 @@
     },
     "workbench.tree.indent": 16,
     "workbench.tree.renderIndentGuides": "always",
-    "workbench.colorTheme": "Default Light Modern",
+    "workbench.colorTheme": "One Dark Pro Darker",
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.tabSize": 2,
     "editor.lineNumbers": "relative",
@@ -26,12 +26,14 @@
     "volar.inlayHints.eventArgumentInInlineHandlers": false,
     // vim
     "vim.easymotion": true,
-    "vim.incsearch": true,
     "vim.useSystemClipboard": true,
     "vim.hlsearch": true,
     "vim.highlightedyank.enable": true,
     "vim.leader": "<space>",
     "vim.foldfix": true,
+    "vim.sneak": true,
+    "vim.sneakUseIgnorecaseAndSmartcase": true,
+    "vim.replaceWithRegister": true,
     "vim.normalModeKeyBindingsNonRecursive": [
       {
         "before": ["H"],
@@ -102,10 +104,6 @@
           "workbench.files.action.focusFilesExplorer"
         ]
       },
-      {
-        "before": ["<leader>", "s"],
-        "after": ["leader", "leader", "2", "s"]
-      }
     ],
     "vim.insertModeKeyBindings": [
       {
