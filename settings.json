@@ -34,6 +34,7 @@
     "vim.sneak": true,
     "vim.sneakUseIgnorecaseAndSmartcase": true,
     "vim.replaceWithRegister": true,
+    "vim.showMarksInGutter": true,
     "vim.normalModeKeyBindingsNonRecursive": [
       {
         "before": ["H"],
