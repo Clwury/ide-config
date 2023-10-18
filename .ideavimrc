@@ -43,6 +43,8 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'vim-scripts/argtextobj.vim'
 Plug 'tommcdo/vim-exchange'
+Plug 'chrisbra/matchit'
+Plug 'kana/vim-textobj-entire'
 
 let g:argtextobj_pairs="[:],(:),<:>"
 
