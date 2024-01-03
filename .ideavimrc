@@ -73,10 +73,21 @@ nnoremap Y y$
 
 nnoremap <C-h> gT
 nnoremap <C-l> gt
-nnoremap <C-n> :noh<CR>
+nnoremap <leader>n :noh<CR>
 nnoremap <leader>q :action CloseContent<CR>
 nnoremap <leader>e :NERDTreeToggle<CR>
 nnoremap <leader>o :NERDTreeFocus<CR>
+" Remap multiple-cursors shortcuts to match terryma/vim-multiple-cursors
+nmap <C-n> <Plug>NextWholeOccurrence
+xmap <C-n> <Plug>NextWholeOccurrence
+nmap g<C-n> <Plug>NextOccurrence
+xmap g<C-n> <Plug>NextOccurrence
+xmap <C-x> <Plug>SkipOccurrence
+xmap <C-p> <Plug>RemoveOccurrence
+nmap <S-C-n> <Plug>AllWholeOccurrences
+xmap <S-C-n> <Plug>AllWholeOccurrences
+nmap g<S-C-n> <Plug>AllOccurrences
+xmap g<S-C-n> <Plug>AllOccurrences
 
 vnoremap H ^
 vnoremap L $
