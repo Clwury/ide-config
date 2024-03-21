@@ -1,0 +1,34 @@
+import = ["/home/luv/.config/alacritty/themes/themes/catppuccin.toml"]
+live_config_reload = true
+
+[cursor]
+blink_timeout = 3
+
+[cursor.style]
+blinking = "Always"
+shape = "Block"
+
+[cursor.vi_mode_style]
+blinking = "Always"
+shape = "Block"
+
+[env]
+TERM = "tmux-256color"
+
+[font]
+size = 16
+
+[font.normal]
+family = "MesloLGS NF"
+
+[selection]
+save_to_clipboard = true
+
+[window]
+dynamic_padding = true
+dynamic_title = true
+opacity = 0.9
+
+[window.dimensions]
+columns = 120
+lines = 35
