@@ -71,12 +71,18 @@ nnoremap L $
 " Yank to the end of line
 nnoremap Y y$
 
+vnoremap H ^
+vnoremap L $
+
 nnoremap <C-h> gT
 nnoremap <C-l> gt
 nnoremap <leader>n :noh<CR>
 nnoremap <leader>q :action CloseContent<CR>
 nnoremap <leader>e :NERDTreeToggle<CR>
 nnoremap <leader>o :NERDTreeFocus<CR>
+nnoremap <leader>w :w!<CR>
+nnoremap <leader>x :x!<CR>
+nnoremap <leader>d :action ShowErrorDescription<CR>
 " Remap multiple-cursors shortcuts to match terryma/vim-multiple-cursors
 nmap <C-n> <Plug>NextWholeOccurrence
 xmap <C-n> <Plug>NextWholeOccurrence
@@ -88,6 +94,3 @@ nmap <S-C-n> <Plug>AllWholeOccurrences
 xmap <S-C-n> <Plug>AllWholeOccurrences
 nmap g<S-C-n> <Plug>AllOccurrences
 xmap g<S-C-n> <Plug>AllOccurrences
-
-vnoremap H ^
-vnoremap L $
