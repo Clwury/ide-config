@@ -16,12 +16,13 @@
   "editor.tabSize": 2,
   "editor.lineNumbers": "relative",
   "editor.renderWhitespace": "boundary",
+  "editor.cursorSurroundingLines": 5,
   // "[jsonc]": {
   //   "editor.defaultFormatter": "vscode.json-language-features"
   // },
   "workbench.tree.indent": 16,
   "workbench.tree.renderIndentGuides": "always",
-  "workbench.colorTheme": "Catppuccin Latte",
+  "workbench.colorTheme": "Catppuccin Macchiato",
   "workbench.iconTheme": "material-icon-theme",
   // "workbench.colorCustomizations": {
   //   // "editorCursor.background": "#D3C6AA",
@@ -133,11 +134,16 @@
       "after": ["<Esc>"]
     }
   ],
+  "vim.handleKeys": {
+    "<C-p>": false
+  },
   // "vscode_custom_css.imports": [
   //   "file:///home/luv/scripts/vscode_custom_js/index.js"
   // ],
-  "everforest.lightCursor": "green",
-  "everforest.darkCursor": "green",
+  // "everforest.lightCursor": "green",
+  // "everforest.darkCursor": "green",
   "git.mergeEditor": true,
-  "diffEditor.ignoreTrimWhitespace": false
+  "diffEditor.ignoreTrimWhitespace": false,
+  "gitlens.views.branches.branches.layout": "list",
+  "javascript.updateImportsOnFileMove.enabled": "always"
 }
