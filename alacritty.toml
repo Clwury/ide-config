@@ -1,4 +1,4 @@
-import = ["/home/luv/.config/alacritty/themes/themes/catppuccin.toml"]
+import = ["/Users/yun/.config/alacritty/themes/themes/catppuccin.toml"]
 live_config_reload = true
 
 [cursor]
@@ -16,19 +16,40 @@ shape = "Block"
 TERM = "tmux-256color"
 
 [font]
-size = 16
+size = 18
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font"
+style = "Bold Italic"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
 
 [font.normal]
-family = "MesloLGS NF"
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[[keyboard.bindings]]
+action = "ToggleMaximized"
+key = "F4"
 
 [selection]
 save_to_clipboard = true
 
 [window]
+decorations = "Buttonless"
 dynamic_padding = true
 dynamic_title = true
-opacity = 0.9
+opacity = 0.8
 
 [window.dimensions]
 columns = 120
 lines = 35
+
+[window.padding]
+# y = 28
