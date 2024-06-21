@@ -1,4 +1,4 @@
-import = ["~/.config/alacritty/themes/themes/catppuccin.toml"]
+import = ["~/.config/alacritty/themes/themes/catppuccin_mocha.toml"]
 live_config_reload = true
 
 [cursor]
@@ -43,9 +43,10 @@ save_to_clipboard = true
 
 [window]
 decorations = "Buttonless"
-dynamic_padding = true
+dynamic_padding = false
 dynamic_title = true
-opacity = 0.8
+option_as_alt = "Both"
+# opacity = 0.8
 
 [window.dimensions]
 columns = 120
