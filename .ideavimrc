@@ -67,6 +67,8 @@ map ]d <Action>(GotoNextError)
 map <leader>ca <Action>(ShowIntentionActions)
 map <leader>w <Action>(SaveAll)
 map <leader>q <Action>(CloseContent)
+map <C-h> <Action>(PreviousTab)
+map <C-l> <Action>(NextTab)
 
 " Quit insert mode
 inoremap jj <Esc>
@@ -83,8 +85,8 @@ nnoremap Y y$
 vnoremap H ^
 vnoremap L $
 
-nnoremap <C-h> gT
-nnoremap <C-l> gt
+" nnoremap <C-h> gT
+" nnoremap <C-l> gt
 nnoremap <leader>n :noh<CR>
 nnoremap <leader>e :NERDTreeToggle<CR>
 nnoremap <leader>o :NERDTreeFocus<CR>
