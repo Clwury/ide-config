@@ -1,7 +1,5 @@
 {
-  "eslint.format.enable": true,
-  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-  "editor.fontFamily": "JetBrains Mono, monospace, Consolas, 'Courier New', '微软雅黑'",
+  "editor.fontFamily": "Maple Mono Normal NF CN, JetBrainsMono Nerd Font, monospace, Consolas, 'Courier New', '微软雅黑'",
   "editor.fontSize": 18,
   "editor.fontVariations": false,
   "editor.lineHeight": 30,
@@ -17,9 +15,11 @@
   "editor.lineNumbers": "relative",
   "editor.renderWhitespace": "boundary",
   "editor.cursorSurroundingLines": 5,
-  // "[jsonc]": {
-  //   "editor.defaultFormatter": "vscode.json-language-features"
-  // },
+  "editor.gotoLocation.multipleDeclarations": "goto",
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.gotoLocation.multipleImplementations": "goto",
+  "editor.gotoLocation.multipleReferences": "goto",
+  "editor.gotoLocation.multipleTypeDefinitions": "goto",
   "workbench.tree.indent": 16,
   "workbench.tree.renderIndentGuides": "always",
   "workbench.colorTheme": "Catppuccin Macchiato",
@@ -126,6 +126,10 @@
     {
       "before": ["<leader>", "c", "a"],
       "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["\\", "r"],
+      "commands": ["editor.action.formatDocument"]
     }
   ],
   "vim.insertModeKeyBindings": [
@@ -137,13 +141,20 @@
   "vim.handleKeys": {
     "<C-p>": false
   },
-  // "vscode_custom_css.imports": [
-  //   "file:///home/luv/scripts/vscode_custom_js/index.js"
-  // ],
-  // "everforest.lightCursor": "green",
-  // "everforest.darkCursor": "green",
-  "git.mergeEditor": true,
-  "diffEditor.ignoreTrimWhitespace": false,
-  "gitlens.views.branches.branches.layout": "list",
-  "javascript.updateImportsOnFileMove.enabled": "always"
+  "eslint.format.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html"
+  ],
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "editor.formatOnSave": true
 }
